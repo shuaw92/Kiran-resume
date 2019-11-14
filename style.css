@@ -1,0 +1,249 @@
+@media only screen and (max-width : 768px) {
+	  .photo{
+    max-width: 100%;
+  }
+
+  section{
+  	grid-template-columns: 1fr;
+  }  
+  
+
+  .links, .company-container {
+    flex-direction: column;
+  }
+ .tech-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+
+ }
+
+
+  .gallery-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+
+}
+
+html {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #F2F2F2;
+  color: #323232;
+}
+
+
+
+.photo {
+  max-width: 100%;
+}
+
+a {
+  color: #323232;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.date{
+  font-size: 16px;
+}
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 32px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.sec-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/*Intrests section*/
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.gallery-container {
+  position: relative;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/* main innformation*/
+
+.photo {
+  width: 130px;
+}
+
+.my-name {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.my-title {
+  font-size: 20px;
+  font-weight: 300;
+  color: #236FB2;
+}
+
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  font-size: 12px;
+}
+
+.link-item a {
+  margin-right: 3px;
+}
+
+
+
+/* experience*/
+
+
+.jobs {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.jobs:last-child {
+  border-bottom: none;
+}
+
+
+
+.company-name {
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+/*Tech section*/
+.lang {
+ font-weight: bold;
+}
+
+
+
+.tech-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-gap: 20px;
+  margin-bottom: 24px;
+}
+
+.list-container ul {
+  margin-left: 20px;
+  list-style-type: square;
+
+
+
+
