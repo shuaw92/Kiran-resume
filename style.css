@@ -225,6 +225,7 @@ body{
    grid-template-columns: 1fr 2fr;
     margin: 0;
   } 
+ 
    
 section{
 
@@ -233,7 +234,7 @@ section{
     box-shadow: none;
   }
   .photo{
-        width: 100px;
+        width: 108px;
     height: 180px;
   }
   
